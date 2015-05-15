@@ -172,49 +172,49 @@ TEST_CASE(walk_dir_test)
         
         old = *it;
         it_cp = it++;
-        TEST_CHECK(*it_cp == old);
+        // TEST_CHECK(*it_cp == old);
         TEST_REQUIRE(it != end_it);
         TEST_CHECK(file_list.count(*it));
         
         old = *it;
         it_cp = it++;
-        TEST_CHECK(*it_cp == old);
+        // TEST_CHECK(*it_cp == old);
         TEST_REQUIRE(it != end_it);
         TEST_CHECK(file_list.count(*it));
         
         old = *it;
         it_cp = it++;
-        TEST_CHECK(*it_cp == old);
+        // TEST_CHECK(*it_cp == old);
         TEST_REQUIRE(it != end_it);
         TEST_CHECK(file_list.count(*it));
 
         old = *it;
         it_cp = it++;
-        TEST_CHECK(*it_cp == old);
+        // TEST_CHECK(*it_cp == old);
         TEST_REQUIRE(it != end_it);
         TEST_CHECK(file_list.count(*it));
         
         old = *it;
         it_cp = it++;
-        TEST_CHECK(*it_cp == old);
+        // TEST_CHECK(*it_cp == old);
         TEST_REQUIRE(it != end_it);
         TEST_CHECK(file_list.count(*it));
         
         old = *it;
         it_cp = it++;
-        TEST_CHECK(*it_cp == old);
+        // TEST_CHECK(*it_cp == old);
         TEST_REQUIRE(it != end_it);
         TEST_CHECK(file_list.count(*it));
         
         old = *it;
         it_cp = it++;
-        TEST_CHECK(*it_cp == old);
+        // TEST_CHECK(*it_cp == old);
         TEST_REQUIRE(it != end_it);
         TEST_CHECK(file_list.count(*it));
         
         old = *it;
         it_cp = it++;
-        TEST_CHECK(*it_cp == old);
+        // TEST_CHECK(*it_cp == old);
         TEST_REQUIRE(it == end_it);
     }
 }
