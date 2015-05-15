@@ -42,7 +42,7 @@ TEST_SUITE(elib_filesystem_static_recursive_directory_iterator_test_suite)
 TEST_CASE(dne_test)
 {
     path const dir = make_static_env_path("dne");
-    recursive_directory_iterator const end_it;
+    recursive_directory_iterator const end_it{};
     {
         std::error_code ec;
         recursive_directory_iterator it(dir, ec);
@@ -57,7 +57,7 @@ TEST_CASE(dne_test)
 TEST_CASE(simple_iterate_test)
 {
     recursive_directory_iterator it(static_test_env_path());
-    recursive_directory_iterator const end_it;
+    recursive_directory_iterator const end_it{};
     
     std::set<directory_entry> seen;
     
@@ -73,7 +73,7 @@ TEST_CASE(disable_recursion_pending_test)
 {
     
     recursive_directory_iterator it(static_test_env_path());
-    recursive_directory_iterator const end_it;
+    recursive_directory_iterator const end_it{};
     
     std::set<directory_entry> seen;
     
@@ -89,7 +89,7 @@ TEST_CASE(disable_recursion_pending_test)
 TEST_CASE(walk_dir_test)
 {
     
-    recursive_directory_iterator const end_it;
+    recursive_directory_iterator const end_it{};
     
     {
         recursive_directory_iterator it(make_static_env_path(""));
@@ -222,7 +222,7 @@ TEST_CASE(walk_dir_test)
 TEST_CASE(pop_test)
 {
     
-    recursive_directory_iterator const end_it;
+    recursive_directory_iterator const end_it{};
     recursive_directory_iterator it(make_static_env_path(""));
     
     std::set<directory_entry> seen;
@@ -246,7 +246,7 @@ TEST_CASE(pop_test)
 
 TEST_CASE(cmp_test)
 {
-    recursive_directory_iterator const end_it;
+    recursive_directory_iterator const end_it{};
     recursive_directory_iterator it(make_static_env_path(""));
     
     TEST_REQUIRE(it != end_it);
