@@ -2,7 +2,7 @@
 #define DYNAMIC_TEST_HELPER_HPP
 
 # include "test_helper.hpp"
-# include <elib/filesystem/operations.hpp>
+# include <elib/filesystem.hpp>
 # include <elib/fmt.hpp>
 # include <elib/preprocessor/str.hpp>
 

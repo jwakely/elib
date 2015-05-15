@@ -2,7 +2,7 @@
 #define FILESYSTEM_UNIT_TEST_TEST_HELPER_HPP
 
 # include <elib/filesystem/config.hpp>
-# include <elib/filesystem/path.hpp>
+# include <elib/filesystem.hpp>
 
 # ifndef ELIB_FILESYSTEM_UNIT_TEST_PATH
 #   error ELIB_FILESYSTEM_UNIT_TEST_PATH must be set to the directory of this file

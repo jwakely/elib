@@ -5,6 +5,7 @@
 #include <stdlib.h> /* for putenv */
 #include "../static_test_helper.hpp"
 #include "rapid-cxx-test.hpp"
+#include <elib/aux/assert.hpp>
 using namespace elib::fs;
 
 // putenv takes a char* (not const char*) so suppress the warning
